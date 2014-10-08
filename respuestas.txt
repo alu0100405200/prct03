@@ -1,15 +1,74 @@
-18-
+18->
 > puts "Hello World"
 Hello World 
 = > nil
 
-21-
+21->
 2.1.1 :001 > puts "Hello World!"
 
 Hello World!
 
  => nil 
 
-2.1.1 :002 > 
+26->
+m: /home/ubuntu/workspace/prct03/byebyeWorld.rb @ line 11 :
+
+
+
+     6: 
+
+     7: #set x to 10
+
+     8: x = 10
+
+     9: 
+
+    10: #start a PEPL session
+
+ => 11: binding.pry
+
+    12: 
+
+    13: #program resumes here (after pry session)
+
+    14: puts "program resumes here. Value of x is: #{x}."
+
+
+
+[1] pry(main)> puts x
+
+10
+
+=> nil
+
+[2] pry(main)> def hello
+
+[2] pry(main)*   puts "Hello World"
+
+[2] pry(main)* end  
+
+=> :hello
+
+[3] pry(main)> hello
+
+Hello World
+
+=> nil
+
+[4] pry(main)> byebye
+
+bye bye world!!!
+
+=> nil
+
+[5] pry(main)> x = "changed"
+
+=> "changed"
+
+[6] pry(main)> exit
+
+program resumes here. Value of x is: changed.
+
+27-> Irb ejecuta línea a línea en el propio intérprete interactivo mientras que pry ejecuta el código como un interprete de ruby normal.
 
 
